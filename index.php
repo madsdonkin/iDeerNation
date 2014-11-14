@@ -5,6 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>iDeer Nation</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
 
 
     </head>
@@ -12,7 +13,7 @@
 
 
 
-        <p>Hello world! This is HTML5 Boilerplate.</p>
+        <p>iDeerNation</p>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="inc/js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
@@ -28,4 +29,4 @@
             ga('send', 'pageview');
         </script>
     </body>
-</html>≤
+</html>
