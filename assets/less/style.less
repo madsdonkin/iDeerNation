@@ -36,8 +36,8 @@
 @body_color: #333;
 @heading_color: #111;
 
-@body_family: "Open Sans", "Helvetica Neue", Arial, Helvetica, Sans-Serif;
-@heading_family: "Open Sans Condensed", "Helvetica Neue", Arial, Helvetica, Sans-Serif;
+@body_family: "Roboto Slab", Serif;
+@heading_family: "Roboto Slab", Serif;
 
 /* Link colors */
 @link: #6bac60;
@@ -48,17 +48,29 @@
 @select_color: #fff;
 
 /* Default Colors */
+@orange: #f39200;
+@off_white: #fefefe;
+
 @grey_light: #ddd;
 @grey_regular: #ccc;
-@grey_dark: #666;
+@grey_dark: #333;
 
 @green: #6bac60;
+
+
+.translate (@x: -50%, @y: -50%) {
+  transform: translate(@x, @y);    
+  -webkit-transform: translate(@x, @y);  
+  -moz-transform: translate(@x, @y);  
+  -ms-transform: translate(@x, @y); 
+}
 
 /* ========================================================== */
 /* = Import normalize baseline and grid                    = */
 /* ========================================================== */
 
 @import "normalize.less";
+@import "mixins.less";
 @import "baseline.less";
 @import "grid.less";
 
@@ -67,8 +79,46 @@
 /* ========================================================== */
 
 body{
-	background: url(../images/bg.png) 0 2px;
+	background: @orange;
+	color: @off_white;
 }
+.wrapper {
+	position: absolute;
+	height: 370px;
+	width: 950px;    
+	left: 50%;
+	top: 50%;
+	
+	.translate;
+}
+.logo {
+		width: 33.33%;
+		height: 100%;
+		margin:0;
+		padding:0;
+		float:left;
+	 	
+	 	img {
+			display: block;
+			margin: 0 auto;
+	 	}              
+	    
+	    h3 {
+	    	text-align: center;
+			font-size: 1.2em;
+			color:@grey_dark;
+			font-weight: 400;
+	    }
+	    
+}
+
+.projects {
+	width: 60%;
+	height: 100%;
+	float:right;
+}
+
+
 
 header#worlds_birth{
 	>div{

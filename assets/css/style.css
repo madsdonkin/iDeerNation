@@ -370,7 +370,7 @@ body {
   font-size: 100%;
   color: #333333;
   line-height: 1.5em;
-  font-family: "Open Sans", "Helvetica Neue", Arial, Helvetica, Sans-Serif;
+  font-family: "Roboto Slab", Serif;
   text-shadow: 0 -1px 1px rgba(255, 255, 255, 0.01);
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
@@ -410,7 +410,7 @@ h4,
 h5,
 h6 {
   margin-top: 0;
-  font-family: "Open Sans Condensed", "Helvetica Neue", Arial, Helvetica, Sans-Serif;
+  font-family: "Roboto Slab", Serif;
   color: #111111;
 }
 h1 {
@@ -455,7 +455,7 @@ figure img {
 figcaption {
   font-size: small;
   font-style: italic;
-  color: #666666;
+  color: #333333;
 }
 ul,
 ol,
@@ -524,28 +524,28 @@ textarea {
   padding: 0.3em;
   border: 1px solid #cccccc;
   line-height: 1.5em;
-  font-family: "Open Sans", "Helvetica Neue", Arial, Helvetica, Sans-Serif;
+  font-family: "Roboto Slab", Serif;
 }
 select {
   width: 100%;
   height: 2.1em;
   margin-bottom: 0.9em;
   border: 1px solid #cccccc;
-  font-family: "Open Sans", "Helvetica Neue", Arial, Helvetica, Sans-Serif;
+  font-family: "Roboto Slab", Serif;
 }
 input[type="range"],
 input[type="color"] {
   vertical-align: middle;
   height: 1.5em;
   width: 100%;
-  font-family: "Open Sans", "Helvetica Neue", Arial, Helvetica, Sans-Serif;
+  font-family: "Roboto Slab", Serif;
 }
 input[type="range"] {
   height: 1.4em;
 }
 input[type="color"] {
   width: 1.5em;
-  font-family: "Open Sans", "Helvetica Neue", Arial, Helvetica, Sans-Serif;
+  font-family: "Roboto Slab", Serif;
 }
 input[type="time"] {
   margin: 0 0 0.55em;
@@ -562,7 +562,7 @@ input[type="button"] {
   background: #ddd;
   padding: 0.7em 2em;
   margin: 0 20px 0 0;
-  font-family: "Open Sans", "Helvetica Neue", Arial, Helvetica, Sans-Serif;
+  font-family: "Roboto Slab", Serif;
   line-height: 1.5em;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -668,7 +668,41 @@ hr {
 /* = Your custom styles go here                             = */
 /* ========================================================== */
 body {
-  background: url(../images/bg.png) 0 2px;
+  background: #f39200;
+  color: #fefefe;
+}
+.wrapper {
+  position: absolute;
+  height: 370px;
+  width: 950px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+.logo {
+  width: 33.33%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  float: left;
+}
+.logo img {
+  display: block;
+  margin: 0 auto;
+}
+.logo h3 {
+  text-align: center;
+  font-size: 1.2em;
+  color: #333333;
+  font-weight: 400;
+}
+.projects {
+  width: 60%;
+  height: 100%;
+  float: right;
 }
 header#worlds_birth > div {
   *zoom: 1;
